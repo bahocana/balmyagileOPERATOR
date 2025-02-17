@@ -1,0 +1,24 @@
+C:\Users\Administrator\Desktop\BalmyAgilev1\bin\Debug\BalmyAgilev1.exe.config
+C:\Users\Administrator\Desktop\BalmyAgilev1\bin\Debug\BalmyAgilev1.exe
+C:\Users\Administrator\Desktop\BalmyAgilev1\bin\Debug\BalmyAgilev1.pdb
+C:\Users\Administrator\Desktop\BalmyAgilev1\bin\Debug\AdvancedDataGridView.dll
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.Form1.resources
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.Properties.Resources.resources
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgi.224957BA.Up2Date
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.exe
+C:\Users\Administrator\Desktop\BalmyAgilev1\obj\Debug\BalmyAgilev1.pdb
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\bin\Debug\BalmyAgilev1.exe.config
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\bin\Debug\BalmyAgilev1.exe
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\bin\Debug\BalmyAgilev1.pdb
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\bin\Debug\AdvancedDataGridView.dll
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.csproj.AssemblyReference.cache
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.Form1.resources
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.Properties.Resources.resources
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.csproj.GenerateResource.cache
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.csproj.CoreCompileInputs.cache
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgi.224957BA.Up2Date
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.exe
+C:\Users\Bahadır Kumrallar\source\repos\BalmyAgilev1\obj\Debug\BalmyAgilev1.pdb

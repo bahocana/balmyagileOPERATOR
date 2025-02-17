@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|c:\\users\\bahad\u0131r kumrallar\\source\\repos\\balmy\\balmyagileoperator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|c:\\users\\bahad\u0131r kumrallar\\source\\repos\\balmy\\balmyagileoperator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\barkodprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:barkodprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\loturetimmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:loturetimmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\istasyon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:istasyon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\istasyon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{802F6D30-6FCB-4ABE-9D2E-5ED11BB2F9A2}|BalmyAgileOperator.csproj|solutionrelative:istasyon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T16:46:14.145Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LotUretimManager.cs",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\LotUretimManager.cs",
+              "RelativeDocumentMoniker": "LotUretimManager.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\LotUretimManager.cs",
+              "RelativeToolTip": "LotUretimManager.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAkwMYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:04:42.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAHURAAAAAAAAAAAkwK8RAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T16:50:05.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAkwMQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:00:19.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T13:02:46.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BarkodPrinter.cs",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\BarkodPrinter.cs",
+              "RelativeDocumentMoniker": "BarkodPrinter.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\BarkodPrinter.cs",
+              "RelativeToolTip": "BarkodPrinter.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAcwEkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T15:00:00.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "istasyon.cs",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\istasyon.cs",
+              "RelativeDocumentMoniker": "istasyon.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\istasyon.cs",
+              "RelativeToolTip": "istasyon.cs",
+              "ViewState": "AgIAABUBAAAAAAAAAAAowCcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:49:54.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "istasyon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\istasyon.cs",
+              "RelativeDocumentMoniker": "istasyon.cs",
+              "ToolTip": "C:\\Users\\Bahad\u0131r Kumrallar\\source\\repos\\Balmy\\BalmyAgileOperator\\istasyon.cs [Design]",
+              "RelativeToolTip": "istasyon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:49:52.128Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
