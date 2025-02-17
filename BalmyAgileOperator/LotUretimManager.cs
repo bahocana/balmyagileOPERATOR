@@ -155,7 +155,7 @@ public class LotUretimManager
             };
 
             // Stored Procedure'ü çalıştır ve sonucu al
-            DataTable resultTable = dbHelper.ExecuteStoredProcedure(5, "sp_UpdateLotTakipBitisTarihiByLotNumarasiTEST", parameters);
+            DataTable resultTable = dbHelper.ExecuteStoredProcedure(5, "sp_UpdateLotTakipBitisTarihiByLotNumarasi", parameters);
 
             // Sonuç kontrolü
             if (resultTable.Rows.Count > 0)

@@ -75,6 +75,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tab_anaform = new System.Windows.Forms.TabControl();
             this.Page_login = new System.Windows.Forms.TabPage();
             this.dvg_istasyonsec = new Zuby.ADGV.AdvancedDataGridView();
@@ -104,6 +106,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dvg_altistasyonsec = new Zuby.ADGV.AdvancedDataGridView();
             this.tabPage_istasyonyonetim = new System.Windows.Forms.TabPage();
+            this.button58 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button55 = new System.Windows.Forms.Button();
@@ -147,9 +151,11 @@
             this.label84 = new System.Windows.Forms.Label();
             this.tabPage_lotbarkod = new System.Windows.Forms.TabPage();
             this.dvg_lotbarkod_UEP = new Zuby.ADGV.AdvancedDataGridView();
-            this.button14 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.combo_printerlotbarkod = new System.Windows.Forms.ComboBox();
             this.button28 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.btn_uretimbitir = new System.Windows.Forms.Button();
             this.Btn_barkodbas = new System.Windows.Forms.Button();
@@ -162,10 +168,14 @@
             this.tree_lotbarkod = new System.Windows.Forms.TreeView();
             this.label12 = new System.Windows.Forms.Label();
             this.dvg_lotbarkod = new Zuby.ADGV.AdvancedDataGridView();
-            this.tab_background = new System.Windows.Forms.TabPage();
-            this.button41 = new System.Windows.Forms.Button();
-            this.label75 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tab_etiketyazdir = new System.Windows.Forms.TabPage();
+            this.list_etiketler = new System.Windows.Forms.ListView();
+            this.button60 = new System.Windows.Forms.Button();
+            this.label94 = new System.Windows.Forms.Label();
+            this.txt_etiketsay = new System.Windows.Forms.TextBox();
+            this.list_etiketolustur = new System.Windows.Forms.ListBox();
+            this.button59 = new System.Windows.Forms.Button();
+            this.dvg_etiketyazdir = new Zuby.ADGV.AdvancedDataGridView();
             this.tabPage_istasyonplanlama = new System.Windows.Forms.TabPage();
             this.button52 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
@@ -249,6 +259,10 @@
             this.button33 = new System.Windows.Forms.Button();
             this.label71 = new System.Windows.Forms.Label();
             this.dvg_depouretimtaleplist = new Zuby.ADGV.AdvancedDataGridView();
+            this.tab_background = new System.Windows.Forms.TabPage();
+            this.button41 = new System.Windows.Forms.Button();
+            this.label75 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tab_depoUretimdetay = new System.Windows.Forms.TabPage();
             this.button37 = new System.Windows.Forms.Button();
             this.label72 = new System.Windows.Forms.Label();
@@ -435,8 +449,11 @@
             this.Page_oyuncuolustur1 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.combo_printerlotbarkod = new System.Windows.Forms.ComboBox();
-            this.label93 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.button61 = new System.Windows.Forms.Button();
+            this.label96 = new System.Windows.Forms.Label();
+            this.combo_yazicietiket = new System.Windows.Forms.ComboBox();
             this.Tab_anaform.SuspendLayout();
             this.Page_login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_istasyonsec)).BeginInit();
@@ -458,8 +475,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvg_lotbarkod_UEP)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_lotbarkod)).BeginInit();
-            this.tab_background.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tab_etiketyazdir.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg_etiketyazdir)).BeginInit();
             this.tabPage_istasyonplanlama.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_alturetimemri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_uretimistasyonplanlamalist)).BeginInit();
@@ -474,6 +491,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvg_uretimtaleplist)).BeginInit();
             this.Tab_depoUretim.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_depouretimtaleplist)).BeginInit();
+            this.tab_background.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tab_depoUretimdetay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_depouretimdetaylist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_depouretimdetaybaslik)).BeginInit();
@@ -658,12 +677,13 @@
             this.Page_ANAMENU.Controls.Add(this.tabPage_istasyonyonetim);
             this.Page_ANAMENU.Controls.Add(this.tab_istasyondurum);
             this.Page_ANAMENU.Controls.Add(this.tabPage_lotbarkod);
-            this.Page_ANAMENU.Controls.Add(this.tab_background);
+            this.Page_ANAMENU.Controls.Add(this.tab_etiketyazdir);
             this.Page_ANAMENU.Controls.Add(this.tabPage_istasyonplanlama);
             this.Page_ANAMENU.Controls.Add(this.Tabpage_UretimPlanlama);
             this.Page_ANAMENU.Controls.Add(this.tabPage_uretimoperasyon);
             this.Page_ANAMENU.Controls.Add(this.Tabpage_uretimdepotalep);
             this.Page_ANAMENU.Controls.Add(this.Tab_depoUretim);
+            this.Page_ANAMENU.Controls.Add(this.tab_background);
             this.Page_ANAMENU.Controls.Add(this.tab_depoUretimdetay);
             this.Page_ANAMENU.Controls.Add(this.tabPage_urunliste);
             this.Page_ANAMENU.Controls.Add(this.tabPage_mrp);
@@ -919,6 +939,8 @@
             // 
             // tabPage_istasyonyonetim
             // 
+            this.tabPage_istasyonyonetim.Controls.Add(this.button58);
+            this.tabPage_istasyonyonetim.Controls.Add(this.button57);
             this.tabPage_istasyonyonetim.Controls.Add(this.textBox3);
             this.tabPage_istasyonyonetim.Controls.Add(this.textBox2);
             this.tabPage_istasyonyonetim.Controls.Add(this.button55);
@@ -953,6 +975,26 @@
             this.tabPage_istasyonyonetim.TabIndex = 13;
             this.tabPage_istasyonyonetim.Text = "istasyon yönetimi";
             this.tabPage_istasyonyonetim.UseVisualStyleBackColor = true;
+            // 
+            // button58
+            // 
+            this.button58.Location = new System.Drawing.Point(639, 140);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(123, 33);
+            this.button58.TabIndex = 106;
+            this.button58.Text = "Lot Sil";
+            this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
+            // 
+            // button57
+            // 
+            this.button57.Location = new System.Drawing.Point(491, 140);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(130, 33);
+            this.button57.TabIndex = 105;
+            this.button57.Text = "Lotları Temizle";
+            this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.button57_Click);
             // 
             // textBox3
             // 
@@ -999,6 +1041,7 @@
             this.button48.TabIndex = 100;
             this.button48.Text = "ETİKET BAS";
             this.button48.UseVisualStyleBackColor = false;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
             // 
             // button47
             // 
@@ -1186,10 +1229,10 @@
             this.button32.BackColor = System.Drawing.Color.Red;
             this.button32.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button32.Location = new System.Drawing.Point(559, 132);
+            this.button32.Location = new System.Drawing.Point(367, 140);
             this.button32.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(118, 46);
+            this.button32.Size = new System.Drawing.Size(118, 32);
             this.button32.TabIndex = 90;
             this.button32.Text = "Üretim Bitir";
             this.button32.UseVisualStyleBackColor = false;
@@ -1256,7 +1299,6 @@
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvg_lotokut.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dvg_lotokut.RowHeadersVisible = false;
             this.dvg_lotokut.RowHeadersWidth = 51;
             this.dvg_lotokut.RowTemplate.Height = 24;
             this.dvg_lotokut.Size = new System.Drawing.Size(509, 448);
@@ -1278,10 +1320,10 @@
             this.button30.BackColor = System.Drawing.Color.Lime;
             this.button30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button30.Location = new System.Drawing.Point(364, 135);
+            this.button30.Location = new System.Drawing.Point(239, 138);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(122, 43);
+            this.button30.Size = new System.Drawing.Size(122, 33);
             this.button30.TabIndex = 85;
             this.button30.Text = "Üretim Başlat";
             this.button30.UseVisualStyleBackColor = false;
@@ -1541,19 +1583,6 @@
             this.dvg_lotbarkod_UEP.TabIndex = 73;
             this.dvg_lotbarkod_UEP.Visible = false;
             // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button14.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Location = new System.Drawing.Point(6, 398);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(246, 36);
-            this.button14.TabIndex = 72;
-            this.button14.Text = "Barkod Sil";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label93);
@@ -1574,6 +1603,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(35, 271);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(118, 19);
+            this.label93.TabIndex = 74;
+            this.label93.Text = "Önce Yazıcı Seçin";
+            // 
+            // combo_printerlotbarkod
+            // 
+            this.combo_printerlotbarkod.FormattingEnabled = true;
+            this.combo_printerlotbarkod.Location = new System.Drawing.Point(20, 308);
+            this.combo_printerlotbarkod.Name = "combo_printerlotbarkod";
+            this.combo_printerlotbarkod.Size = new System.Drawing.Size(226, 27);
+            this.combo_printerlotbarkod.TabIndex = 73;
+            // 
             // button28
             // 
             this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -1586,6 +1632,19 @@
             this.button28.Text = "1- İSTASYON YÖNETİMİ";
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button14.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button14.Location = new System.Drawing.Point(6, 398);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(246, 36);
+            this.button14.TabIndex = 72;
+            this.button14.Text = "Barkod Sil";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button16
             // 
@@ -1630,22 +1689,22 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(49, 76);
+            this.label13.Location = new System.Drawing.Point(41, 83);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(150, 20);
+            this.label13.Size = new System.Drawing.Size(118, 20);
             this.label13.TabIndex = 54;
-            this.label13.Text = "Üretilen Çuval Adet";
+            this.label13.Text = "Üretilen Miktar";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // txt_cuvalmiktar
             // 
             this.txt_cuvalmiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_cuvalmiktar.Location = new System.Drawing.Point(65, 108);
+            this.txt_cuvalmiktar.Location = new System.Drawing.Point(45, 118);
             this.txt_cuvalmiktar.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cuvalmiktar.Name = "txt_cuvalmiktar";
             this.txt_cuvalmiktar.Size = new System.Drawing.Size(111, 24);
             this.txt_cuvalmiktar.TabIndex = 56;
-            this.txt_cuvalmiktar.Text = "200";
             // 
             // button23
             // 
@@ -1748,51 +1807,114 @@
             this.dvg_lotbarkod.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.dvg_lotbarkod.TabIndex = 52;
             // 
-            // tab_background
+            // tab_etiketyazdir
             // 
-            this.tab_background.Controls.Add(this.button41);
-            this.tab_background.Controls.Add(this.label75);
-            this.tab_background.Controls.Add(this.pictureBox2);
-            this.tab_background.Location = new System.Drawing.Point(4, 28);
-            this.tab_background.Name = "tab_background";
-            this.tab_background.Size = new System.Drawing.Size(1505, 1099);
-            this.tab_background.TabIndex = 16;
-            this.tab_background.Text = "Background";
-            this.tab_background.UseVisualStyleBackColor = true;
+            this.tab_etiketyazdir.Controls.Add(this.combo_yazicietiket);
+            this.tab_etiketyazdir.Controls.Add(this.label96);
+            this.tab_etiketyazdir.Controls.Add(this.button61);
+            this.tab_etiketyazdir.Controls.Add(this.label95);
+            this.tab_etiketyazdir.Controls.Add(this.comboBox1);
+            this.tab_etiketyazdir.Controls.Add(this.list_etiketler);
+            this.tab_etiketyazdir.Controls.Add(this.button60);
+            this.tab_etiketyazdir.Controls.Add(this.label94);
+            this.tab_etiketyazdir.Controls.Add(this.txt_etiketsay);
+            this.tab_etiketyazdir.Controls.Add(this.list_etiketolustur);
+            this.tab_etiketyazdir.Controls.Add(this.button59);
+            this.tab_etiketyazdir.Controls.Add(this.dvg_etiketyazdir);
+            this.tab_etiketyazdir.Location = new System.Drawing.Point(4, 28);
+            this.tab_etiketyazdir.Name = "tab_etiketyazdir";
+            this.tab_etiketyazdir.Size = new System.Drawing.Size(1505, 1099);
+            this.tab_etiketyazdir.TabIndex = 21;
+            this.tab_etiketyazdir.Text = "Etiket Yazdır";
+            this.tab_etiketyazdir.UseVisualStyleBackColor = true;
             // 
-            // button41
+            // list_etiketler
             // 
-            this.button41.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button41.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button41.Location = new System.Drawing.Point(584, 614);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(171, 35);
-            this.button41.TabIndex = 60;
-            this.button41.Text = "Operatör Giriş";
-            this.button41.UseVisualStyleBackColor = false;
-            this.button41.Click += new System.EventHandler(this.button41_Click);
+            this.list_etiketler.HideSelection = false;
+            this.list_etiketler.Location = new System.Drawing.Point(743, 121);
+            this.list_etiketler.Name = "list_etiketler";
+            this.list_etiketler.Size = new System.Drawing.Size(536, 223);
+            this.list_etiketler.TabIndex = 94;
+            this.list_etiketler.UseCompatibleStateImageBehavior = false;
             // 
-            // label75
+            // button60
             // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label75.Location = new System.Drawing.Point(619, 539);
-            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(94, 20);
-            this.label75.TabIndex = 59;
-            this.label75.Text = "By AbkCore";
+            this.button60.Location = new System.Drawing.Point(730, 56);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(130, 26);
+            this.button60.TabIndex = 93;
+            this.button60.Text = "Etiket Oluştur";
+            this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
             // 
-            // pictureBox2
+            // label94
             // 
-            this.pictureBox2.Image = global::BalmyAgilev1.Properties.Resources.balmylogo;
-            this.pictureBox2.Location = new System.Drawing.Point(502, 132);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(346, 378);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(468, 56);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(150, 19);
+            this.label94.TabIndex = 92;
+            this.label94.Text = "Kaç Etiket Çıkartılacak";
+            // 
+            // txt_etiketsay
+            // 
+            this.txt_etiketsay.Location = new System.Drawing.Point(624, 56);
+            this.txt_etiketsay.Name = "txt_etiketsay";
+            this.txt_etiketsay.Size = new System.Drawing.Size(100, 26);
+            this.txt_etiketsay.TabIndex = 91;
+            this.txt_etiketsay.Text = "1";
+            // 
+            // list_etiketolustur
+            // 
+            this.list_etiketolustur.FormattingEnabled = true;
+            this.list_etiketolustur.ItemHeight = 19;
+            this.list_etiketolustur.Location = new System.Drawing.Point(379, 112);
+            this.list_etiketolustur.Name = "list_etiketolustur";
+            this.list_etiketolustur.Size = new System.Drawing.Size(358, 232);
+            this.list_etiketolustur.TabIndex = 89;
+            // 
+            // button59
+            // 
+            this.button59.Location = new System.Drawing.Point(318, 52);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(144, 27);
+            this.button59.TabIndex = 88;
+            this.button59.Text = "Lot Seç";
+            this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
+            // 
+            // dvg_etiketyazdir
+            // 
+            this.dvg_etiketyazdir.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_etiketyazdir.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dvg_etiketyazdir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg_etiketyazdir.FilterAndSortEnabled = true;
+            this.dvg_etiketyazdir.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
+            this.dvg_etiketyazdir.Location = new System.Drawing.Point(25, 103);
+            this.dvg_etiketyazdir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dvg_etiketyazdir.MaxFilterButtonImageHeight = 23;
+            this.dvg_etiketyazdir.Name = "dvg_etiketyazdir";
+            this.dvg_etiketyazdir.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_etiketyazdir.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.dvg_etiketyazdir.RowHeadersWidth = 51;
+            this.dvg_etiketyazdir.RowTemplate.Height = 24;
+            this.dvg_etiketyazdir.Size = new System.Drawing.Size(308, 448);
+            this.dvg_etiketyazdir.SortStringChangedInvokeBeforeDatasourceUpdate = true;
+            this.dvg_etiketyazdir.TabIndex = 87;
             // 
             // tabPage_istasyonplanlama
             // 
@@ -1913,14 +2035,14 @@
             // dvg_alturetimemri
             // 
             this.dvg_alturetimemri.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_alturetimemri.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_alturetimemri.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.dvg_alturetimemri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_alturetimemri.FilterAndSortEnabled = true;
             this.dvg_alturetimemri.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -1928,14 +2050,14 @@
             this.dvg_alturetimemri.MaxFilterButtonImageHeight = 23;
             this.dvg_alturetimemri.Name = "dvg_alturetimemri";
             this.dvg_alturetimemri.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_alturetimemri.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_alturetimemri.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dvg_alturetimemri.RowHeadersWidth = 51;
             this.dvg_alturetimemri.RowTemplate.Height = 24;
             this.dvg_alturetimemri.Size = new System.Drawing.Size(1020, 277);
@@ -1947,14 +2069,14 @@
             // dvg_uretimistasyonplanlamalist
             // 
             this.dvg_uretimistasyonplanlamalist.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_uretimistasyonplanlamalist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_uretimistasyonplanlamalist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dvg_uretimistasyonplanlamalist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_uretimistasyonplanlamalist.FilterAndSortEnabled = true;
             this.dvg_uretimistasyonplanlamalist.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -1962,14 +2084,14 @@
             this.dvg_uretimistasyonplanlamalist.MaxFilterButtonImageHeight = 23;
             this.dvg_uretimistasyonplanlamalist.Name = "dvg_uretimistasyonplanlamalist";
             this.dvg_uretimistasyonplanlamalist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_uretimistasyonplanlamalist.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_uretimistasyonplanlamalist.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dvg_uretimistasyonplanlamalist.RowHeadersVisible = false;
             this.dvg_uretimistasyonplanlamalist.RowHeadersWidth = 51;
             this.dvg_uretimistasyonplanlamalist.RowTemplate.Height = 24;
@@ -2576,7 +2698,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(1501, 1072);
+            this.groupBox4.Size = new System.Drawing.Size(1501, 1150);
             this.groupBox4.TabIndex = 51;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
@@ -2584,14 +2706,14 @@
             // dvg_listuretimemri
             // 
             this.dvg_listuretimemri.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_listuretimemri.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_listuretimemri.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dvg_listuretimemri.ColumnHeadersHeight = 29;
             this.dvg_listuretimemri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvg_listuretimemri.FilterAndSortEnabled = true;
@@ -2600,17 +2722,17 @@
             this.dvg_listuretimemri.MaxFilterButtonImageHeight = 23;
             this.dvg_listuretimemri.Name = "dvg_listuretimemri";
             this.dvg_listuretimemri.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_listuretimemri.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_listuretimemri.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dvg_listuretimemri.RowHeadersWidth = 51;
             this.dvg_listuretimemri.RowTemplate.Height = 24;
-            this.dvg_listuretimemri.Size = new System.Drawing.Size(1497, 1049);
+            this.dvg_listuretimemri.Size = new System.Drawing.Size(1497, 1127);
             this.dvg_listuretimemri.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.dvg_listuretimemri.TabIndex = 50;
             // 
@@ -2725,14 +2847,14 @@
             // dvg_uretimtalepmrp
             // 
             this.dvg_uretimtalepmrp.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_uretimtalepmrp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_uretimtalepmrp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dvg_uretimtalepmrp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_uretimtalepmrp.FilterAndSortEnabled = true;
             this.dvg_uretimtalepmrp.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -2740,14 +2862,14 @@
             this.dvg_uretimtalepmrp.MaxFilterButtonImageHeight = 23;
             this.dvg_uretimtalepmrp.Name = "dvg_uretimtalepmrp";
             this.dvg_uretimtalepmrp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_uretimtalepmrp.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_uretimtalepmrp.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dvg_uretimtalepmrp.RowHeadersWidth = 51;
             this.dvg_uretimtalepmrp.RowTemplate.Height = 24;
             this.dvg_uretimtalepmrp.Size = new System.Drawing.Size(1176, 548);
@@ -2835,14 +2957,14 @@
             // dvg_uretimtaleplist
             // 
             this.dvg_uretimtaleplist.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_uretimtaleplist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_uretimtaleplist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.dvg_uretimtaleplist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_uretimtaleplist.FilterAndSortEnabled = true;
             this.dvg_uretimtaleplist.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -2850,14 +2972,14 @@
             this.dvg_uretimtaleplist.MaxFilterButtonImageHeight = 23;
             this.dvg_uretimtaleplist.Name = "dvg_uretimtaleplist";
             this.dvg_uretimtaleplist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_uretimtaleplist.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_uretimtaleplist.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dvg_uretimtaleplist.RowHeadersVisible = false;
             this.dvg_uretimtaleplist.RowHeadersWidth = 51;
             this.dvg_uretimtaleplist.RowTemplate.Height = 24;
@@ -2903,14 +3025,14 @@
             // dvg_depouretimtaleplist
             // 
             this.dvg_depouretimtaleplist.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_depouretimtaleplist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_depouretimtaleplist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dvg_depouretimtaleplist.ColumnHeadersHeight = 29;
             this.dvg_depouretimtaleplist.FilterAndSortEnabled = true;
             this.dvg_depouretimtaleplist.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -2918,19 +3040,65 @@
             this.dvg_depouretimtaleplist.MaxFilterButtonImageHeight = 23;
             this.dvg_depouretimtaleplist.Name = "dvg_depouretimtaleplist";
             this.dvg_depouretimtaleplist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_depouretimtaleplist.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_depouretimtaleplist.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dvg_depouretimtaleplist.RowHeadersWidth = 51;
             this.dvg_depouretimtaleplist.RowTemplate.Height = 24;
             this.dvg_depouretimtaleplist.Size = new System.Drawing.Size(1227, 694);
             this.dvg_depouretimtaleplist.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.dvg_depouretimtaleplist.TabIndex = 51;
+            // 
+            // tab_background
+            // 
+            this.tab_background.Controls.Add(this.button41);
+            this.tab_background.Controls.Add(this.label75);
+            this.tab_background.Controls.Add(this.pictureBox2);
+            this.tab_background.Location = new System.Drawing.Point(4, 28);
+            this.tab_background.Name = "tab_background";
+            this.tab_background.Size = new System.Drawing.Size(1505, 1099);
+            this.tab_background.TabIndex = 16;
+            this.tab_background.Text = "Background";
+            this.tab_background.UseVisualStyleBackColor = true;
+            // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button41.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button41.Location = new System.Drawing.Point(584, 614);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(171, 35);
+            this.button41.TabIndex = 60;
+            this.button41.Text = "Operatör Giriş";
+            this.button41.UseVisualStyleBackColor = false;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label75.Location = new System.Drawing.Point(619, 539);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(94, 20);
+            this.label75.TabIndex = 59;
+            this.label75.Text = "By AbkCore";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BalmyAgilev1.Properties.Resources.balmylogo;
+            this.pictureBox2.Location = new System.Drawing.Point(502, 132);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(346, 378);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // tab_depoUretimdetay
             // 
@@ -3019,14 +3187,14 @@
             // dvg_depouretimdetaylist
             // 
             this.dvg_depouretimdetaylist.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_depouretimdetaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_depouretimdetaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dvg_depouretimdetaylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_depouretimdetaylist.FilterAndSortEnabled = true;
             this.dvg_depouretimdetaylist.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3034,14 +3202,14 @@
             this.dvg_depouretimdetaylist.MaxFilterButtonImageHeight = 23;
             this.dvg_depouretimdetaylist.Name = "dvg_depouretimdetaylist";
             this.dvg_depouretimdetaylist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_depouretimdetaylist.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_depouretimdetaylist.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dvg_depouretimdetaylist.RowHeadersWidth = 51;
             this.dvg_depouretimdetaylist.RowTemplate.Height = 24;
             this.dvg_depouretimdetaylist.Size = new System.Drawing.Size(1218, 579);
@@ -3062,14 +3230,14 @@
             // dvg_depouretimdetaybaslik
             // 
             this.dvg_depouretimdetaybaslik.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_depouretimdetaybaslik.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_depouretimdetaybaslik.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.dvg_depouretimdetaybaslik.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_depouretimdetaybaslik.FilterAndSortEnabled = true;
             this.dvg_depouretimdetaybaslik.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3077,14 +3245,14 @@
             this.dvg_depouretimdetaybaslik.MaxFilterButtonImageHeight = 23;
             this.dvg_depouretimdetaybaslik.Name = "dvg_depouretimdetaybaslik";
             this.dvg_depouretimdetaybaslik.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_depouretimdetaybaslik.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_depouretimdetaybaslik.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dvg_depouretimdetaybaslik.RowHeadersVisible = false;
             this.dvg_depouretimdetaybaslik.RowHeadersWidth = 51;
             this.dvg_depouretimdetaybaslik.RowTemplate.Height = 24;
@@ -3122,14 +3290,14 @@
             // dvg_urunliste
             // 
             this.dvg_urunliste.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_urunliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_urunliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dvg_urunliste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_urunliste.FilterAndSortEnabled = true;
             this.dvg_urunliste.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3137,14 +3305,14 @@
             this.dvg_urunliste.MaxFilterButtonImageHeight = 23;
             this.dvg_urunliste.Name = "dvg_urunliste";
             this.dvg_urunliste.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_urunliste.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_urunliste.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.dvg_urunliste.RowHeadersVisible = false;
             this.dvg_urunliste.RowHeadersWidth = 51;
             this.dvg_urunliste.RowTemplate.Height = 24;
@@ -3226,14 +3394,14 @@
             // dvg_mrp
             // 
             this.dvg_mrp.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_mrp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_mrp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
             this.dvg_mrp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_mrp.FilterAndSortEnabled = true;
             this.dvg_mrp.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3241,14 +3409,14 @@
             this.dvg_mrp.MaxFilterButtonImageHeight = 23;
             this.dvg_mrp.Name = "dvg_mrp";
             this.dvg_mrp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_mrp.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_mrp.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.dvg_mrp.RowHeadersVisible = false;
             this.dvg_mrp.RowHeadersWidth = 51;
             this.dvg_mrp.RowTemplate.Height = 24;
@@ -3288,14 +3456,14 @@
             // dvg_fasonlotbarkod
             // 
             this.dvg_fasonlotbarkod.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_fasonlotbarkod.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_fasonlotbarkod.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle39;
             this.dvg_fasonlotbarkod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_fasonlotbarkod.FilterAndSortEnabled = true;
             this.dvg_fasonlotbarkod.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3303,14 +3471,14 @@
             this.dvg_fasonlotbarkod.MaxFilterButtonImageHeight = 23;
             this.dvg_fasonlotbarkod.Name = "dvg_fasonlotbarkod";
             this.dvg_fasonlotbarkod.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_fasonlotbarkod.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_fasonlotbarkod.RowHeadersDefaultCellStyle = dataGridViewCellStyle40;
             this.dvg_fasonlotbarkod.RowHeadersVisible = false;
             this.dvg_fasonlotbarkod.RowHeadersWidth = 51;
             this.dvg_fasonlotbarkod.RowTemplate.Height = 24;
@@ -3581,14 +3749,14 @@
             // 
             // Dvg_Stoklist
             // 
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dvg_Stoklist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dvg_Stoklist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.Dvg_Stoklist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dvg_Stoklist.FilterAndSortEnabled = true;
             this.Dvg_Stoklist.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3596,14 +3764,14 @@
             this.Dvg_Stoklist.MaxFilterButtonImageHeight = 23;
             this.Dvg_Stoklist.Name = "Dvg_Stoklist";
             this.Dvg_Stoklist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dvg_Stoklist.RowHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dvg_Stoklist.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.Dvg_Stoklist.RowHeadersVisible = false;
             this.Dvg_Stoklist.RowHeadersWidth = 51;
             this.Dvg_Stoklist.RowTemplate.Height = 24;
@@ -3667,14 +3835,14 @@
             // dvg_stoklistgiris
             // 
             this.dvg_stoklistgiris.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_stoklistgiris.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_stoklistgiris.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
             this.dvg_stoklistgiris.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_stoklistgiris.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvg_stoklistgiris.FilterAndSortEnabled = true;
@@ -3683,14 +3851,14 @@
             this.dvg_stoklistgiris.MaxFilterButtonImageHeight = 23;
             this.dvg_stoklistgiris.Name = "dvg_stoklistgiris";
             this.dvg_stoklistgiris.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_stoklistgiris.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_stoklistgiris.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
             this.dvg_stoklistgiris.RowHeadersWidth = 51;
             this.dvg_stoklistgiris.RowTemplate.Height = 24;
             this.dvg_stoklistgiris.Size = new System.Drawing.Size(1127, 172);
@@ -3771,14 +3939,14 @@
             // dvg_movelistgiris
             // 
             this.dvg_movelistgiris.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_movelistgiris.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_movelistgiris.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.dvg_movelistgiris.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_movelistgiris.FilterAndSortEnabled = true;
             this.dvg_movelistgiris.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3786,14 +3954,14 @@
             this.dvg_movelistgiris.MaxFilterButtonImageHeight = 23;
             this.dvg_movelistgiris.Name = "dvg_movelistgiris";
             this.dvg_movelistgiris.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_movelistgiris.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_movelistgiris.RowHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.dvg_movelistgiris.RowHeadersWidth = 51;
             this.dvg_movelistgiris.RowTemplate.Height = 24;
             this.dvg_movelistgiris.Size = new System.Drawing.Size(1127, 258);
@@ -3965,14 +4133,14 @@
             // dvg_siparisliste
             // 
             this.dvg_siparisliste.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_siparisliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_siparisliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.dvg_siparisliste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_siparisliste.FilterAndSortEnabled = true;
             this.dvg_siparisliste.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -3980,14 +4148,14 @@
             this.dvg_siparisliste.MaxFilterButtonImageHeight = 23;
             this.dvg_siparisliste.Name = "dvg_siparisliste";
             this.dvg_siparisliste.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvg_siparisliste.RowHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvg_siparisliste.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.dvg_siparisliste.RowHeadersVisible = false;
             this.dvg_siparisliste.RowHeadersWidth = 51;
             this.dvg_siparisliste.RowTemplate.Height = 24;
@@ -5023,22 +5191,48 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // combo_printerlotbarkod
+            // comboBox1
             // 
-            this.combo_printerlotbarkod.FormattingEnabled = true;
-            this.combo_printerlotbarkod.Location = new System.Drawing.Point(20, 308);
-            this.combo_printerlotbarkod.Name = "combo_printerlotbarkod";
-            this.combo_printerlotbarkod.Size = new System.Drawing.Size(226, 27);
-            this.combo_printerlotbarkod.TabIndex = 73;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(730, 20);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(155, 27);
+            this.comboBox1.TabIndex = 95;
             // 
-            // label93
+            // label95
             // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(35, 271);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(118, 19);
-            this.label93.TabIndex = 74;
-            this.label93.Text = "Önce Yazıcı Seçin";
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(606, 23);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(119, 19);
+            this.label95.TabIndex = 96;
+            this.label95.Text = "Etiket Tipi Seçiniz";
+            // 
+            // button61
+            // 
+            this.button61.Location = new System.Drawing.Point(900, 58);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(139, 24);
+            this.button61.TabIndex = 97;
+            this.button61.Text = "Etiket Yazdır";
+            this.button61.UseVisualStyleBackColor = true;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(950, 23);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(93, 19);
+            this.label96.TabIndex = 98;
+            this.label96.Text = "Yazıcı Seçiniz";
+            // 
+            // combo_yazicietiket
+            // 
+            this.combo_yazicietiket.FormattingEnabled = true;
+            this.combo_yazicietiket.Location = new System.Drawing.Point(1049, 20);
+            this.combo_yazicietiket.Name = "combo_yazicietiket";
+            this.combo_yazicietiket.Size = new System.Drawing.Size(184, 27);
+            this.combo_yazicietiket.TabIndex = 99;
             // 
             // Form1
             // 
@@ -5078,9 +5272,9 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_lotbarkod)).EndInit();
-            this.tab_background.ResumeLayout(false);
-            this.tab_background.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tab_etiketyazdir.ResumeLayout(false);
+            this.tab_etiketyazdir.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg_etiketyazdir)).EndInit();
             this.tabPage_istasyonplanlama.ResumeLayout(false);
             this.tabPage_istasyonplanlama.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_alturetimemri)).EndInit();
@@ -5102,6 +5296,9 @@
             this.Tab_depoUretim.ResumeLayout(false);
             this.Tab_depoUretim.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_depouretimtaleplist)).EndInit();
+            this.tab_background.ResumeLayout(false);
+            this.tab_background.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tab_depoUretimdetay.ResumeLayout(false);
             this.tab_depoUretimdetay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_depouretimdetaylist)).EndInit();
@@ -5507,6 +5704,21 @@
         private System.Windows.Forms.Button button56;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.ComboBox combo_printerlotbarkod;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.TabPage tab_etiketyazdir;
+        private Zuby.ADGV.AdvancedDataGridView dvg_etiketyazdir;
+        private System.Windows.Forms.ListBox list_etiketolustur;
+        private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.TextBox txt_etiketsay;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.ListView list_etiketler;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox combo_yazicietiket;
+        private System.Windows.Forms.Label label96;
     }
 }
 

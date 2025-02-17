@@ -689,6 +689,12 @@ namespace BalmyAgilev1
                 //LoadAltistasyonlarToDataGridView(5, dvg_altistasyonsec, "sp_getAltistasyonlist");
                 //LoadOperatorlerToDataGridView(5,dvg_operatorlist);
             }
+
+            else if (Page_ANAMENU.SelectedTab == tab_etiketyazdir)
+            {
+                LoadLotNumaralariToDataGridView("ETIKET-KOLİLEME", dvg_etiketyazdir);
+
+            }
             else if (Page_ANAMENU.SelectedTab == Page_StokGiris)
             {
                 LoadDepolarToComboBox(combo_depogiris);
@@ -1241,7 +1247,7 @@ namespace BalmyAgilev1
 
         private async void button11_Click(object sender, EventArgs e)
         {
-           
+            txt_cuvalmiktar.Text = "";
             uretimemritasi2(dvg_uretimistasyonplanlamalist, dvg_lotbarkod_UEP, "");
 
             uretimemritasi(dvg_alturetimemri, dvg_lotbarkod, "Lot Barkod");
@@ -1399,6 +1405,13 @@ namespace BalmyAgilev1
 
         private async void button16_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(txt_cuvalmiktar.Text))
+            {
+                MessageBox.Show("Lütfen Üretilecek miktar giriniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string UretimEmriIstasyon = txt_globaluretimemriistasyon.Text;
 
             string Uretimdepotalepno = dvg_lotbarkod.Rows[0].Cells["UretimDepoTalepNo"].Value?.ToString();
@@ -3061,6 +3074,36 @@ namespace BalmyAgilev1
             //string UretimEmriIstasyon = dvg_istasyonyonetlist.Rows[0].Cells["UretimEmriIstasyonNo"].Value?.ToString();
             //UpdateUEISTUretilenmiktar(UretimEmriIstasyon, Convert.ToInt32(txt_uretilenmiktar.Text));
         }
+
+
+        public void LoadLotNumaralariToDataGridView(string altIstasyonAdi, DataGridView dataGridView)
+        {
+            try
+            {
+                // Stored procedure parametreleri
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                new SqlParameter("@AltistasyonAdi", SqlDbType.NVarChar, 150) { Value = altIstasyonAdi }
+                };
+
+                // Stored procedure çalıştır ve sonucu DataTable olarak al
+                DataTable resultTable = dbHelper.ExecuteStoredProcedure(UserID, "sp_getlotnumarasibyalturetimemrino", parameters);
+
+                // DataGridView'a verileri bağla
+                dataGridView.DataSource = resultTable;
+
+                // Eğer sütun başlıkları gerekiyorsa ekleyebilirsin
+                if (dataGridView.Columns.Count > 0)
+                {
+                    dataGridView.Columns[0].HeaderText = "Lot Numarası";
+                }
+                dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Hata: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public void GetLastStationForLot(int userId, string connectionString, string lotNumarasi, DataGridView dvg_lotokut)
         {
             // DatabaseHelper oluştur
@@ -3321,6 +3364,41 @@ namespace BalmyAgilev1
                 MessageBox.Show($"Beklenmeyen bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void UpdateLotTakipDetay(DatabaseHelper dbHelper, int userId, string lotNumarasi, string sorumluAdi, int uretilenMiktar, bool isBaslangic)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(lotNumarasi))
+                {
+                    MessageBox.Show("Lot numarası boş olamaz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(sorumluAdi))
+                {
+                    MessageBox.Show("Sorumlu adı boş olamaz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+            new SqlParameter("@LotNumarasi", SqlDbType.NVarChar) { Value = lotNumarasi },
+            new SqlParameter("@SorumluAdi", SqlDbType.NVarChar) { Value = sorumluAdi },
+            new SqlParameter("@UretilenMiktar", SqlDbType.Int) { Value = uretilenMiktar },
+            new SqlParameter("@IsBaslangic", SqlDbType.Bit) { Value = isBaslangic }
+                };
+
+                dbHelper.ExecuteNonQuery(userId, "sp_UpdateLotTakipDetay", parameters);
+
+                //MessageBox.Show("Üretim istasyonu takip detayları güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Hata: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private async void button30_Click(object sender, EventArgs e)
         {
             if (dvg_lotokut.Rows.Count <= 0)
@@ -3357,6 +3435,9 @@ namespace BalmyAgilev1
                     // Lot numarasını kullanarak fonksiyonları sırayla çağır
                     manager.IstasyonAtaByLotNumarasi(lotNumarasi, istasyonAdi, altIstasyonAdi, sorumluKisiAdi, createUser);
                     manager.CreateOrUpdateLotUretByLotno(lotNumarasi, istasyonAdi, altIstasyonAdi, sorumluKisiAdi, miktar, createUser);
+                    UpdateLotTakipDetay(dbHelper, 5, lotNumarasi, sorumluKisiAdi, miktar, true);
+
+
                 }
             }
             dvg_lotokut.Rows.Clear();
@@ -4305,9 +4386,22 @@ public void SendApprovalEmail(string recipientEmail, string uretimDepoTalepNo, s
             lbl_operastorata.Text = lbl_operatorsec.Text;
             lbl_altistasyonata.Text = lbl_Altistasyonsec.Text;
             lbl_istasyonata.Text = lbl_istasyonsec.Text;
-            dvg_lotisleyen.Rows.Clear();
-            dvg_lotisleyen.Columns.Clear();
-            dvg_lotbarkod.DataSource = null;
+            // Eğer DataSource bağlıysa önce null yap
+            if (dvg_lotisleyen.DataSource is DataTable dt)
+            {
+                dt.Clear(); // DataTable içindeki tüm verileri temizler
+            }
+            else if (dvg_lotisleyen.DataSource is BindingSource bs)
+            {
+                bs.Clear(); // BindingSource bağlıysa temizle
+            }
+            else
+            {
+                dvg_lotisleyen.DataSource = null; // Kaynağı sıfırla
+            }
+
+  
+
             await LoadLotByIstasyonToGrid(UserID, lbl_istasyonata.Text, lbl_altistasyonata.Text, lbl_operastorata.Text, dvg_lotisleyen);
             GoToTabPage("istasyon yönetimi");
         }
@@ -4378,20 +4472,47 @@ public void SendApprovalEmail(string recipientEmail, string uretimDepoTalepNo, s
 
         private async void button32_Click(object sender, EventArgs e)
         {
+
+            int miktar = 200; // Miktar
+            string createUser = "admin"; // İşlemi yapan kullanıcı
             string lotNumarasi = dvg_lotokut.Rows[0].Cells["LotNumarasi"].Value?.ToString();
             string istasyonAdi = lbl_istasyonata.Text;
             string altIstasyonAdi = lbl_altistasyonata.Text;
             string sorumluKisiAdi = lbl_operastorata.Text;
-            // Güncelleme işlemini yap
             LotUretimManager manager = new LotUretimManager(new DatabaseHelper(connectionstring));
-            string sonuc = manager.UpdateLotBitisTarihiByLotNumarasi(lotNumarasi);
- 
-            // Kullanıcıya mesaj göster
-            MessageBox.Show(sonuc, "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Güncelleme işlemini yap
+            foreach (DataGridViewRow row in dvg_lotokut.Rows) // dvg_lotokut içindeki tüm satırları dön
+            {
+                // Eğer satır boş değilse ve "LotNumarasi" sütunu boş değilse işlemi yap
+                if (row.Cells["LotNumarasi"].Value != null && !string.IsNullOrWhiteSpace(row.Cells["LotNumarasi"].Value.ToString()))
+                {
+                   
+
+                    // Lot numarasını kullanarak fonksiyonları sırayla çağır
+                    UpdateLotTakipDetay(dbHelper, 5, lotNumarasi, sorumluKisiAdi, miktar, false);
+                    
+                    string sonuc = manager.UpdateLotBitisTarihiByLotNumarasi(lotNumarasi);
+
+                    // Kullanıcıya mesaj göster
+                    MessageBox.Show(sonuc, "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
             await LoadLotByIstasyonToGrid(UserID, istasyonAdi, altIstasyonAdi, sorumluKisiAdi, dvg_lotisleyen);
             dvg_lotokut.Rows.Clear();
             dvg_lotokut.Columns.Clear();
             dvg_lotokut.DataSource = null;
+
+            if (istasyonAdi == "AMBALAJ" && altIstasyonAdi == "AMBALAJ")
+            {
+                string yeniIstasyonAdi = "ETIKET-KOLİLEME";
+                string yeniAltIstasyonAdi = "ETIKET-KOLİLEME";
+                string yeniSorumluKisiAdi = "ETIKET-KOLİLEME";
+
+                manager.IstasyonAtaByLotNumarasi(lotNumarasi, yeniIstasyonAdi, yeniAltIstasyonAdi, yeniSorumluKisiAdi, createUser);
+                manager.CreateOrUpdateLotUretByLotno(lotNumarasi, yeniIstasyonAdi, yeniAltIstasyonAdi, yeniSorumluKisiAdi, miktar, createUser);
+            }
+
         }
 
         private void button44_Click(object sender, EventArgs e)
@@ -4445,7 +4566,97 @@ public void SendApprovalEmail(string recipientEmail, string uretimDepoTalepNo, s
                 GoToTabPageana("AnaForm");
             }
         }
+        public void EtiketOlusturVeYazdir(DatabaseHelper dbHelper, System.Windows.Forms.ListBox list_etiketolustur, System.Windows.Forms.ListView list_etiketler, System.Windows.Forms.TextBox txt_etiketsay)
+        {
+            if (list_etiketolustur.Items.Count == 0)
+            {
+                MessageBox.Show("Lot numarası listesi boş!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            int etiketSayisi = int.TryParse(txt_etiketsay.Text, out int result) ? result : 1;
+
+            // **ListView kolonlarını temizle ve tekrar oluştur**
+            list_etiketler.Clear();
+            list_etiketler.View = View.Details;
+            list_etiketler.Columns.Add("Ürün Adı", 200);
+            list_etiketler.Columns.Add("Ürün Kodu", 100);
+            list_etiketler.Columns.Add("Koli İçi Adet", 100);
+            list_etiketler.Columns.Add("Üretim Tarihi", 100);
+            list_etiketler.Columns.Add("Son Kullanma Tarihi", 130);
+            list_etiketler.Columns.Add("Parti No", 120);
+
+            StringBuilder lotNumaralari = new StringBuilder();
+            string uretimEmriNo = "";
+            string mamulStokKodu = "";
+
+            foreach (var lotNumarasi in list_etiketolustur.Items)
+            {
+                string lotNo = lotNumarasi.ToString();
+
+                // **Üretim Emri No ve Mamül Stok Kodunu SQL'den Çek**
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+            new SqlParameter("@LotNumarasi", SqlDbType.NVarChar) { Value = lotNo }
+                };
+
+                DataTable dt = dbHelper.ExecuteStoredProcedure(5, "sp_getUretimEmriVeMamulStokKodu", parameters);
+
+                if (dt.Rows.Count > 0)
+                {
+                    uretimEmriNo = dt.Rows[0]["UretimEmriNo"].ToString();
+                    mamulStokKodu = dt.Rows[0]["UretilecekUrunKodu"].ToString();
+
+                    lotNumaralari.Append(lotNo + ",");
+                }
+            }
+
+            if (string.IsNullOrEmpty(uretimEmriNo) || string.IsNullOrEmpty(mamulStokKodu))
+            {
+                MessageBox.Show("Hata: Üretim Emri No veya Mamül Stok Kodu bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // **Son virgülü kaldır**
+            if (lotNumaralari.Length > 0)
+                lotNumaralari.Length--;
+
+            // **Unique Parti No Oluştur**
+            string partiNo = $"{uretimEmriNo}-P{DateTime.Now:yyyyMMddHHmmss}";
+
+            // **Mamül Girişini Tek Seferde Yap**
+            SqlParameter[] insertParams = new SqlParameter[]
+            {
+        new SqlParameter("@MamülStokKodu", SqlDbType.NVarChar) { Value = mamulStokKodu },
+        new SqlParameter("@UretimEmriNo", SqlDbType.NVarChar) { Value = uretimEmriNo },
+        new SqlParameter("@PartiNo", SqlDbType.NVarChar) { Value = partiNo },
+        new SqlParameter("@Depo", SqlDbType.NVarChar) { Value = "Tuzla Üretim Depo" },
+        new SqlParameter("@Lokasyon", SqlDbType.NVarChar) { Value = "Raf 3" },
+        new SqlParameter("@UretilenMiktar", SqlDbType.Int) { Value = 50 * etiketSayisi }, // **Tüm etiketleri kapsayan miktar**
+        new SqlParameter("@LotNumaralari", SqlDbType.NVarChar) { Value = lotNumaralari.ToString() },
+        new SqlParameter("@KullanilanMiktar", SqlDbType.Int) { Value = 10 * etiketSayisi },
+        new SqlParameter("@CreateUser", SqlDbType.NVarChar) { Value = "admin" }
+            };
+
+            dbHelper.ExecuteNonQuery(5, "sp_InsertMamulGiris", insertParams);
+
+            // **Etiket İçeriğini ListView'a Ekle**
+            for (int i = 1; i <= etiketSayisi; i++)
+            {
+                string etiketPartiNo = $"{partiNo}-{i}";
+
+                System.Windows.Forms.ListViewItem item = new System.Windows.Forms.ListViewItem("BALMY TÜKETİM ÜRÜNLERİ A.Ş.");
+                item.SubItems.Add(mamulStokKodu);
+                item.SubItems.Add("24");
+                item.SubItems.Add(DateTime.Now.ToString("dd.MM.yyyy"));
+                item.SubItems.Add(DateTime.Now.AddYears(3).ToString("dd.MM.yyyy"));
+                item.SubItems.Add(etiketPartiNo);
+
+                list_etiketler.Items.Add(item);
+            }
+
+            MessageBox.Show("Etiketler başarıyla oluşturuldu!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         private void button51_Click(object sender, EventArgs e)
         {
             GoToTabPage("istasyonekran");
@@ -4459,6 +4670,71 @@ public void SendApprovalEmail(string recipientEmail, string uretimDepoTalepNo, s
         private void button55_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            dvg_lotokut.DataSource = null;
+            dvg_lotokut.Rows.Clear();
+
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            if (dvg_lotokut.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dvg_lotokut.SelectedRows)
+                {
+                    if (!row.IsNewRow) // Yeni satır değilse sil
+                    {
+                        dvg_lotokut.Rows.RemoveAt(row.Index);
+                    }
+                }
+            }
+
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            // Eğer hiç satır seçili değilse uyarı ver
+            if (dvg_etiketyazdir.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Lütfen en az bir satır seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Seçili satırları döngüye al
+            foreach (DataGridViewRow row in dvg_etiketyazdir.SelectedRows)
+            {
+                // LotNumarasi kolonunun adını doğru olarak belirt (örneğin "LotNumarasi" veya başka bir isim)
+                if (row.Cells["LotNumarasi"].Value != null)
+                {
+                    string lotNumarasi = row.Cells["LotNumarasi"].Value.ToString();
+
+                    // Aynı değer zaten eklenmiş mi kontrol et
+                    if (!list_etiketolustur.Items.Contains(lotNumarasi))
+                    {
+                        list_etiketolustur.Items.Add(lotNumarasi); // ListBox'a ekle
+                    }
+                }
+            }
+
+            MessageBox.Show("Seçili lotlar etiket listesine eklendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            EtiketOlusturVeYazdir(dbHelper, list_etiketolustur, list_etiketler, txt_etiketsay);
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            GoToTabPage("Etiket Yazdır");
         }
     }
 }   
